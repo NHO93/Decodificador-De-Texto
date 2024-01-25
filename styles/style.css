@@ -3,7 +3,7 @@
   --primary-btn-background: #0a713c;
   --primary-btn-background-hover: #07614d;
   --primary-btn-color: #ffff;
-  --primary-font-color: #0a2a50;
+  --primary-font-color: #0a3871;
   --secondary-background: #ffff;
   --secondary-btn-background: #eff1fa;
   --secondary-btn-background-hover: #d8dfe8;
@@ -53,7 +53,7 @@ footer > a {
   margin: 0 10px;
 }
 .social-icons a {
-  color: var( --primary-font-color);
+  color: #fff;
   text-decoration: none;
   font-size: 24px;
 }
