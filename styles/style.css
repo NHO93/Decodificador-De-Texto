@@ -1,13 +1,13 @@
 :root {
   --primary-background: #f3f5fc;
-  --primary-btn-background: #0a3871;
-  --primary-btn-background-hover: #072b61;
+  --primary-btn-background: #38e850;
+  --primary-btn-background-hover: #4882d9;
   --primary-btn-color: #ffff;
-  --primary-font-color: #0a3871;
+  --primary-font-color: #efce64;
   --secondary-background: #ffff;
   --secondary-btn-background: #eff1fa;
   --secondary-btn-background-hover: #d8dfe8;
-  --secondary-btn-border-color: #0a3871;
+  --secondary-btn-border-color: #132c4b;
   --secondary-font-color: #495057;
 }
 * {
