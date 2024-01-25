@@ -1,10 +1,8 @@
 # Decodificador De Texto
 
+## Alura Challenge - CriptoApp
 
-## Alura Challenge - CriptoApp: Troca de Mensagens Secretas
-
-Bem-vindo ao Alura Challenge #01! Nas próximas quatro semanas, vamos mergulhar no desenvolvimento de uma aplicação para criptografar e descriptografar textos, proporcionando a troca de mensagens secretas entre usuários que compartilham o conhecimento das chaves de criptografia utilizadas.
-
+Bem-vindo ao Alura Challenge #01!
 ___
 ## Chaves de Criptografia
 As chaves de criptografia adotadas são simples, mas eficazes, transformando as seguintes letras:
@@ -17,7 +15,7 @@ As chaves de criptografia adotadas são simples, mas eficazes, transformando as 
 ___
 ## Requisitos
 - Apenas letras minúsculas.
-- As letras não devem acentos ou caracteres especiais.
+- As letras não devem conter acentos ou caracteres especiais.
 
 ### Exemplo
 - "gato" => "gaitober"
@@ -28,3 +26,5 @@ ___
 - Opção de escolha entre criptografar ou descriptografar.
 - Exibição imediata do resultado na tela.
 ___
+
+## Licensa 
