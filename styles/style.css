@@ -1,14 +1,14 @@
 :root {
-  --primary-background: #eff0f2;
-  --primary-btn-background: #38e850;
-  --primary-btn-background-hover: #f3f9fa;
-  --primary-btn-color: #f5ebeb;
-  --primary-font-color: #6f25ef;
-  --secondary-background: #f98417;
-  --secondary-btn-background: #cced86;
-  --secondary-btn-background-hover: #419208;
-  --secondary-btn-border-color: #23eaa8;
-  --secondary-font-color: #2c3034;
+  --prim-background: #eff0f2;
+  --prim-btn-background: #38e850;
+  --prim-btn-background-hover: #f3f9fa;
+  --prim-btn-color: #f5ebeb;
+  --prim-font-color: #6f25ef;
+  --sec-background: #f98417;
+  --sec-btn-background: #cced86;
+  --sec-btn-background-hover: #419208;
+  --sec-btn-border-color: #23eaa8;
+  --sec-font-color: #2c3034;
 }
 * {
   box-sizing: border-box;
@@ -21,7 +21,7 @@
 }
 body {
   align-items: center;
-  background-color: var(--primary-background);
+  background-color: var(--prim-background);
   display: flex;
   justify-content: space-evenly;
   min-height: 100vh;
@@ -29,7 +29,7 @@ body {
 }
 footer {
   bottom: 0px;
-  color:  var(--primary-background);
+  color:  var(--prim-background);
   font-weight: 700;
   padding: 20px;
   background: #fc5b04;
@@ -38,29 +38,29 @@ footer {
   position: absolute;
 }
 footer > a {
-  color: var(--primary-background);
+  color: var(--prim-background);
   text-decoration: none;
 }
 
-.social-icons {
+.redes-sociais {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.social-icons li {
+.redes-sociais li {
   margin: 0 10px;
 }
-.social-icons a {
+.redes-sociais a {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
 }
 a:-webkit-any-link {
-  color: var(--primary-background);
+  color: var(--prim-background);
 }
-.header-section {
+.selecao {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -76,12 +76,12 @@ main {
   justify-content: space-between;
   width: 680px;
 }
-.advice-title {
+.title-desable {
   line-height: 120%;
   text-align: center;
 }
-.advice-text {
-  color: var(--secondary-font-color);
+.text-desable {
+  color: var(--sec-font-color);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -89,9 +89,9 @@ main {
   line-height: 150%;
   text-align: center;
 }
-.alert-text {
+.texto-aviso {
   align-items: center;
-  color: var(--secondary-font-color);
+  color: var(--sec-font-color);
   display: flex;
   font-size: 12px;
   font-style: normal;
@@ -99,26 +99,26 @@ main {
   gap: 5px;
   line-height: 150%;
 }
-.container-messages {
+.container-messagens {
   align-items: center;
-  background: var(--secondary-background);
-  background-color: var(--secondary-background);
+  background: var(--sec-background);
+  background-color: var(--sec-background);
   border-radius: 32px;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24px 32px -8px rgba(23, 23, 23, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   width: 440px;
 }
-.container-result-message {
+.container-resultado-menssagem {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: -webkit-fill-available;
 }
-.result-text {
+.resposta-texto {
   color: #495057;
   font-size: 24px;
   font-style: normal;
@@ -132,7 +132,7 @@ main {
 #input {
   background-color: transparent;
   border: none;
-  color: var(--primary-font-color);
+  color: var(--prim-font-color);
   font-size: 2rem;
   font-weight: 400;
   height: -webkit-fill-available;
@@ -144,7 +144,7 @@ main {
   margin-top: 20px;
 }
 #input::placeholder {
-  color: var(--primary-font-color);
+  color: var(--prim-font-color);
 }
 .btn {
   border-radius: 24px;
@@ -172,28 +172,28 @@ main {
 .btn-copy {
   margin-bottom: 20px;
 }
-.result-text {
-  color: var(--secondary-font-color);
+.resposta-texto {
+  color: var(--sec-font-color);
   margin-top: 20px;
 }
 .disabled {
   display: none;
 }
 .btn-group {
-  background-color: var(--secondary-btn-background);
-  border: 1px solid var(--secondary-btn-border-color);
+  background-color: var(--sec-btn-background);
+  border: 1px solid var(--sec-btn-border-color);
   border-radius: 24px;
 }
 .btn-group:hover {
-  background-color: var(--secondary-btn-background-hover);
+  background-color: var(--sec-btn-background-hover);
 }
 .btn-crypted {
-  background-color: var(--primary-btn-background);
+  background-color: var(--prim-btn-background);
   border: none;
-  color: var(--primary-btn-color);
+  color: var(--prim-btn-color);
 }
 .dark-blue:hover {
-  background-color: var(--primary-btn-background-hover);
+  background-color: var(--prim-btn-background-hover);
 }
 @media screen and (min-width: 600px) and (max-width: 1339px) {
   body {
@@ -215,13 +215,13 @@ main {
   #input {
     width: 88%;
   }
-  .container-messages {
+  .container-messagens {
     font-size: 20px;
     height: auto;
     padding: 20px;
     width: 92%;
   }
-  .alert-text {
+  .texto-aviso {
     margin-left: 24px;
   }
   .btn {
@@ -235,7 +235,7 @@ main {
   .btn-copy {
     width: 576px;
   }
-  .header-section {
+  .selecao  {
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -246,7 +246,7 @@ main {
   aside {
     text-align: center;
   }
-  .advice-title {
+  .title-desable {
     font-size: 20px;
     line-height: 120%;
     text-align: center;
@@ -257,7 +257,7 @@ main {
   #input::placeholder {
     font-size: 20px;
   }
-  .advice-text {
+  .text-desable {
     font-size: 14px;
   }
   .img {
@@ -277,7 +277,7 @@ main {
     justify-content: center;
     width: 100%;
   }
-  .alert-text {
+  .texto-aviso {
     margin-left: 34px;
   }
   .btn {
@@ -288,13 +288,13 @@ main {
     margin: 12px;
     width: -webkit-fill-available;
   }
-  .container-messages {
+  .container-messagens {
     font-size: 20px;
     height: auto;
     padding: 20px;
     width: 70%;
   }
-  .header-section {
+  .selecao {
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -309,7 +309,7 @@ main {
   aside {
     text-align: center;
   }
-  .advice-title {
+  .title-desable {
     font-size: 20px;
     line-height: 120%;
     text-align: center;
@@ -321,7 +321,7 @@ main {
   #input::placeholder {
     font-size: 20px;
   }
-  .advice-text {
+  .text-desable {
     font-size: 14px;
   }
   .img {
