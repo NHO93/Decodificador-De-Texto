@@ -1,14 +1,14 @@
 :root {
-  --primary-background: #f3f5fc;
+  --primary-background: #eff0f2;
   --primary-btn-background: #38e850;
-  --primary-btn-background-hover: #4882d9;
+  --primary-btn-background-hover: #c5d8f4;
   --primary-btn-color: #090101;
   --primary-font-color: #6f25ef;
-  --secondary-background: #ffff;
-  --secondary-btn-background: #8ea0ef;
+  --secondary-background: #f92929;
+  --secondary-btn-background: #cced86;
   --secondary-btn-background-hover: #419208;
   --secondary-btn-border-color: #23eaa8;
-  --secondary-font-color: #495057;
+  --secondary-font-color: #f2f4f6;
 }
 * {
   box-sizing: border-box;
