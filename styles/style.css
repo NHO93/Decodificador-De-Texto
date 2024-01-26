@@ -1,14 +1,14 @@
 :root {
-  --prim-background: #eff0f2;
-  --prim-btn-background: #38e850;
-  --prim-btn-background-hover: #f3f9fa;
-  --prim-btn-color: #f5ebeb;
-  --prim-font-color: #6f25ef;
-  --sec-background: #f98417;
-  --sec-btn-background: #cced86;
-  --sec-btn-background-hover: #419208;
-  --sec-btn-border-color: #23eaa8;
-  --sec-font-color: #2c3034;
+  --primary-background: #eff0f2;
+  --primary-btn-background: #38e850;
+  --primary-btn-background-hover: #f3f9fa;
+  --primary-btn-color: #f5ebeb;
+  --primary-font-color: #6f25ef;
+  --secondary-background: #f98417;
+  --secondary-btn-background: #cced86;
+  --secondary-btn-background-hover: #419208;
+  --secondary-btn-border-color: #23eaa8;
+  --secondary-font-color: #2c3034;
 }
 * {
   box-sizing: border-box;
@@ -21,7 +21,7 @@
 }
 body {
   align-items: center;
-  background-color: var(--prim-background);
+  background-color: var(--primary-background);
   display: flex;
   justify-content: space-evenly;
   min-height: 100vh;
@@ -29,7 +29,7 @@ body {
 }
 footer {
   bottom: 0px;
-  color:  var(--prim-background);
+  color:  var(--primary-background);
   font-weight: 700;
   padding: 20px;
   background: #fc5b04;
@@ -38,29 +38,29 @@ footer {
   position: absolute;
 }
 footer > a {
-  color: var(--prim-background);
+  color: var(--primary-background);
   text-decoration: none;
 }
 
-.redes-sociais {
+.social-icons {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.redes-sociais li {
+.social-icons li {
   margin: 0 10px;
 }
-.redes-sociais a {
+.social-icons a {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
 }
 a:-webkit-any-link {
-  color: var(--prim-background);
+  color: var(--primary-background);
 }
-.selecao {
+.header-section {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -76,12 +76,12 @@ main {
   justify-content: space-between;
   width: 680px;
 }
-.title-desable {
+.advice-title {
   line-height: 120%;
   text-align: center;
 }
-.text-desable {
-  color: var(--sec-font-color);
+.advice-text {
+  color: var(--secondary-font-color);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -89,9 +89,9 @@ main {
   line-height: 150%;
   text-align: center;
 }
-.texto-aviso {
+.alert-text {
   align-items: center;
-  color: var(--sec-font-color);
+  color: var(--secondary-font-color);
   display: flex;
   font-size: 12px;
   font-style: normal;
@@ -99,26 +99,26 @@ main {
   gap: 5px;
   line-height: 150%;
 }
-.container-messagens {
+.container-messages {
   align-items: center;
-  background: var(--sec-background);
-  background-color: var(--sec-background);
+  background: var(--secondary-background);
+  background-color: var(--secondary-background);
   border-radius: 32px;
-  box-shadow: 0px 24px 32px -8px rgba(23, 23, 23, 0.08);
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   width: 440px;
 }
-.container-resultado-menssagem {
+.container-result-message {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: -webkit-fill-available;
 }
-.resposta-texto {
+.result-text {
   color: #495057;
   font-size: 24px;
   font-style: normal;
@@ -132,7 +132,7 @@ main {
 #input {
   background-color: transparent;
   border: none;
-  color: var(--prim-font-color);
+  color: var(--primary-font-color);
   font-size: 2rem;
   font-weight: 400;
   height: -webkit-fill-available;
@@ -144,7 +144,7 @@ main {
   margin-top: 20px;
 }
 #input::placeholder {
-  color: var(--prim-font-color);
+  color: var(--primary-font-color);
 }
 .btn {
   border-radius: 24px;
@@ -172,28 +172,28 @@ main {
 .btn-copy {
   margin-bottom: 20px;
 }
-.resposta-texto {
-  color: var(--sec-font-color);
+.result-text {
+  color: var(--secondary-font-color);
   margin-top: 20px;
 }
 .disabled {
   display: none;
 }
 .btn-group {
-  background-color: var(--sec-btn-background);
-  border: 1px solid var(--sec-btn-border-color);
+  background-color: var(--secondary-btn-background);
+  border: 1px solid var(--secondary-btn-border-color);
   border-radius: 24px;
 }
 .btn-group:hover {
-  background-color: var(--sec-btn-background-hover);
+  background-color: var(--secondary-btn-background-hover);
 }
 .btn-crypted {
-  background-color: var(--prim-btn-background);
+  background-color: var(--primary-btn-background);
   border: none;
-  color: var(--prim-btn-color);
+  color: var(--primary-btn-color);
 }
 .dark-blue:hover {
-  background-color: var(--prim-btn-background-hover);
+  background-color: var(--primary-btn-background-hover);
 }
 @media screen and (min-width: 600px) and (max-width: 1339px) {
   body {
@@ -215,13 +215,13 @@ main {
   #input {
     width: 88%;
   }
-  .container-messagens {
+  .container-messages {
     font-size: 20px;
     height: auto;
     padding: 20px;
     width: 92%;
   }
-  .texto-aviso {
+  .alert-text {
     margin-left: 24px;
   }
   .btn {
@@ -235,7 +235,7 @@ main {
   .btn-copy {
     width: 576px;
   }
-  .selecao  {
+  .header-section {
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -246,7 +246,7 @@ main {
   aside {
     text-align: center;
   }
-  .title-desable {
+  .advice-title {
     font-size: 20px;
     line-height: 120%;
     text-align: center;
@@ -257,7 +257,7 @@ main {
   #input::placeholder {
     font-size: 20px;
   }
-  .text-desable {
+  .advice-text {
     font-size: 14px;
   }
   .img {
@@ -277,7 +277,7 @@ main {
     justify-content: center;
     width: 100%;
   }
-  .texto-aviso {
+  .alert-text {
     margin-left: 34px;
   }
   .btn {
@@ -288,13 +288,13 @@ main {
     margin: 12px;
     width: -webkit-fill-available;
   }
-  .container-messagens {
+  .container-messages {
     font-size: 20px;
     height: auto;
     padding: 20px;
     width: 70%;
   }
-  .selecao {
+  .header-section {
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -309,7 +309,7 @@ main {
   aside {
     text-align: center;
   }
-  .title-desable {
+  .advice-title {
     font-size: 20px;
     line-height: 120%;
     text-align: center;
@@ -321,7 +321,7 @@ main {
   #input::placeholder {
     font-size: 20px;
   }
-  .text-desable {
+  .advice-text {
     font-size: 14px;
   }
   .img {
